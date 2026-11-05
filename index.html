@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тренажёр P3 и P6</title>
+  <meta name="description" content="Тренажёр по самым трудным задачам IMO: пять задач уровня P3 и P6 с подсказками Мираса Кенесбека и личной историей прогресса.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+  <script defer src="problems.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">IMO · задачи 3 и 6</p>
+      <h1>Тренажёр P3 и P6</h1>
+      <p class="lead">Задачи 3 и 6 на IMO по традиции самые трудные в каждом туре: шаблон их не берёт, нужна своя идея. В своём исследовании Мирас Кенесбек показал, что именно на таких задачах команда Казахстана заметно отстаёт от команд Турции и Ирана, поэтому здесь собраны только задачи этого уровня.</p>
+      <p class="how">Нажмите «Начать попытку» и думайте сами. Подсказку открывайте, только если застряли. Отметьте результат, и он сохранится в вашей истории на этом устройстве.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="progress" aria-labelledby="progress-title">
+      <div class="section-head">
+        <h2 id="progress-title">Ваш прогресс</h2>
+        <button type="button" class="link-btn" id="reset-all">Сбросить историю</button>
+      </div>
+      <div class="stats" id="stats"></div>
+      <div class="board" id="board"></div>
+      <p class="legend">
+        <span class="dot dot-own"></span> решил сам
+        <span class="dot dot-hint"></span> решил с подсказкой
+        <span class="dot dot-fail"></span> не решил
+      </p>
+    </section>
+
+    <section aria-label="Задачи" id="problems"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Задачи и подсказки: Мирас Кенесбек</div>
+  </footer>
+</body>
+</html>
